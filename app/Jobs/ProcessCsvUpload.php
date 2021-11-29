@@ -51,7 +51,7 @@ class ProcessCsvUpload implements ShouldQueue
                'destinationAddress' => $row[2],
                'amount' => $row[4]
             ]);
-            //Trip::create($row);
+           // Trip::create($row);
         }
         unlink($this->file);
     }
